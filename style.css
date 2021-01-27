@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+   margin: 0%;/*isso aqui deixou meu navbar mais fininho e colado com a parte de cima da página. Antes tinha um espaço em branco em cima. */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    position: fixed;/* esse negócio é importante mas deixa tudo zuado o espaçamento e configuração. Tou vendo que pra resolver esse problema, preciso SEMPRE COPIAR IGUALZINHO OQ TENHO FEITO NO SHOWCASE*/
+    width: 100%;
+}
+.IT{
+   margin-left: 120px;
+   font-size: 27px;
+}
+.IT:hover{
+    color: blue;
+    cursor: pointer;
+}
+.lista1{
+    display: flex;
+    list-style: none;
+    margin-right: 120px;
+}
+.l1{
+   margin-right: 12px;
+   text-transform: uppercase;
+   font-size: 14px;
+   margin-top: 8px;
+}
+.l1:hover{
+    color: blue;
+    cursor: pointer;
+}
+.showcase{ /*SEMPRE COPIAR ESSA PORRA,pq o position fixed no navbar buga tudo e só isso que resolve. */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(showcase.jpg) center/cover;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+.showcase h1{
+    font-size: 42px;
+    }
+.showcase p{
+    font-size: 25px;
+    margin-top: 5px;
+    }
+.showcase button{
+    padding: 8px 50px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.showcase button:hover{
+    background:gray;
+    cursor: pointer;
+}
+.meio{
+    padding: 30px;
+    background-color:rgb(207, 204, 204);
+}
+.lista2{
+  list-style: none;
+  display: flex;
+  }
+.meio h2{
+    text-align: center;
+}
+
+.empresas{
+    height: 60px;
+    margin-left: 210px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* A DE BAIXO FOI A PIOR DE TODAS. PASSEI MUITAS HORAS TESTANDO VÁRIAS VEZES.MUDEI MILHARES DE COISAS NO MEIO DO CAMINHO. FOI UMA BOSTA PRA CHEGAR NUM FORMATO MT PARECIDO COM O DO VÍDEO.FIQUEI TESTANDO MARGING E PADDING UM BILHÃO DE VEZES.      tou falando do .ok */
+.ok{
+    background: rgba(0, 0, 0, 0.849);
+    padding-bottom: 15px;
+  }
+.ok h2{
+    color: white;
+   text-align: center;
+    
+    padding-top: 35px;
+    font-family: cursive;
+}
+.dosP{ /*essa div tive que criar só pra deixar os p1,p2,p3 em display flex . Se botasse isso no .ok, ia dar ruim por causa do h2 */
+    display: flex;
+}
+.p1{
+    width: 27%;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color:rgba(128, 128, 128, 0.315);
+    color: white;
+}
+.p1 i{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+ }
+ .p1 i:hover{
+     color:orange;
+     cursor: pointer;
+ }
+.p1 h1{
+        font-size: 20px;
+        margin-left: 6px;
+}
+.p1 p{
+        font-size: 12px;
+        margin-left: 6px;
+        margin-right: 2px;
+}
+
+    
+.p2{
+    
+    width: 27%;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    margin-left: 70px;
+    margin-top: 50px;
+    background-color: rgba(128, 128, 128, 0.315);
+    color: white;
+    }
+.p2 i{
+        font-size: 30px;
+        margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 6px
+} 
+.p2 i:hover{
+
+
+    color: black;
+    cursor: pointer;
+}
+
+.p2 h1{
+    font-size: 20px;
+    margin-left: 6px;
+}
+
+.p2 p{
+    font-size: 12px;
+    margin-left: 6px;
+    margin-right: 2px;
+}
+
+
+.p3{
+    
+    width: 27%;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    margin-left: 90px;
+    margin-top: 50px;
+    background-color: rgba(128, 128, 128, 0.315);
+    color: white;
+}
+.p3 i{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 6px
+}
+.p3 i:hover{
+ color: yellow;
+ cursor: pointer;
+}
+.p3 h1{
+    font-size: 20px;
+    margin-left: 6px;
+}
+.p3 p{
+    font-size: 12px;
+    margin-left: 6px;
+    margin-right: 2px;
+}
+
+.class{
+    padding-bottom: 60px;
+    background-color:rgb(207, 204, 204);
+}
+.class h2{
+    text-align: center;
+    padding-top: 60px;
+}
+.ab{
+    display: flex;
+}
+.iphone{
+    height: 360px;
+    margin-top: 60px;
+margin-left: 300px;
+}
+.ab ul{ /*margin right aqui n dava certo. Mas dava certo nas minhas divs do one ao four. Essas divs tb têm os li dessa ul. */
+    list-style: none;
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.one{
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 100px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.one i{
+    font-size: 38px;
+}
+.two{
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 100px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.two i{
+  font-size: 38px;
+}
+.three{
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 100px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.three i{
+font-size: 38px;
+margin-left: 10px;/*aqui foi só pq especificamente o ícone do cavalo deixava a frase do loren com espaçamento um tiquinho diferente das outras. Daí fiz isso p deixar um pouco um pouquinho mais pra direita e acabou dando certo. */
+}
+.four{
+    display: flex;
+    margin-right: 100px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.four i{
+font-size: 38px;
+}
+.div{
+    background: rgba(0, 0, 0, 0.849);
+    padding-bottom: 50px;
+    
+}
+.div h2{
+    color: white;
+    font-family: cursive;
+    padding-top: 20px; /*Assim como foi na .ok eu só consegui fazer essa merda desse h2 não ficar grudado no comeõ da div usando o padding top. Margin top não resolvia nesse caso. */
+    text-align: center;
+}
+.ff{
+    background-color:rgba(128, 128, 128, 0.315);
+    width: 65%;
+   padding-bottom: 8px;
+   
+   margin-bottom: 20px;
+   margin-top: 40px;
+   margin-left: 240px;
+   display: flex;
+   padding-top: 5px;/*foi o improviso que eu vi pra que a parte de cima da foto não fique colada no começo da .ff. Aí esse padding pra cima deu um pouquinho de espaço(bem pouco) */
+}
+.pessoa1{
+    height: 150px;
+   border-radius: 50%;
+   margin-left: 10px;
+   
+   margin-right: 10px;
+}
+.ff p{
+    margin-top: 60px;
+    margin-left: 10px;
+    color: white;
+}
+.gg{
+    background-color:rgba(128, 128, 128, 0.315);
+    width: 65%;
+   padding-bottom: 8px;
+   margin-left: 240px;
+   display: flex;
+   padding-top: 5px;/*foi o improviso que eu vi pra que a parte de cima da foto não fique colada no começo da .ff. Aí esse padding pra cima deu um pouquinho de espaço(bem pouco) */
+}
+.pessoa2{
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+    margin-right: 10px;
+ }
+
+.gg p{
+    margin-top: 60px;
+    margin-left: 30px;
+    color: white;
+}
+.galeria{
+    padding-bottom: 70px;
+    background-color:rgba(128, 128, 128, 0.315);
+}
+.galeria h2{
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.img1{
+height: 250px;
+margin-left: 70px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.img2{
+    height: 250px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.img3{
+    height: 250px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.img4{
+    height: 250px;
+    margin-left: 70px;
+}
+.img5{
+    height: 250px;
+    margin-left: 30px;
+}
+.img6{ /*essa img 6 já veio naturalmente um pouquinho mais larga que a img 3(tá em cima da img6). Aí eu fui testando com o width até deixar na largura igual a da img3. Aí cheguei nesse 353. */
+    height: 250px;
+    margin-left: 30px;
+    width: 353px;
+}
+.footer{
+    padding-bottom: 40px;
+    background-color: black;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+    
